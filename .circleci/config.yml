@@ -9,8 +9,6 @@ jobs:
     steps:
       - checkout
 
-      - cd project/
-
       - run:
           name: uno
           command: gem update --system
