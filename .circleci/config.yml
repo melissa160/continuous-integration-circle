@@ -14,6 +14,14 @@ jobs:
           command: gem update --system
 
       - run:
+          name: install update bundler
+          command: gem install bundler
+
+      - run:
+          name: update Gemfile.lock in your project
+          command: bundler update --bundler
+
+      - run:
           name: build dependencies
           command: bundle install
 
